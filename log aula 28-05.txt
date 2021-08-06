@@ -1,0 +1,225 @@
+Lucas Nascimento09:11
+Bom dia!
+Luísa Leite09:11
+Bom dia, pessoal!
+MOISES REQUIÃO DO NASCIMENTO09:13
+Bom dia
+Aula de tira dúvidas
+Vamos fazer o Temporizador: cria um projeto novo ou continua o da aula passada
+professor pediu pra fazer
+Tiago Gomes09:24
+sim
+MOISES REQUIÃO DO NASCIMENTO09:24
+sim
+Joao Pedro09:25
+fiz
+Felipe Pereira09:25
+eu
+Renato Santos09:25
+Eu
+Tiago Gomes09:25
+eu
+Lucas Nascimento09:25
+eu
+MOISES REQUIÃO DO NASCIMENTO09:25
+ee
+Roger Oliveira09:25
+eu
+lucas09:25
+Eu
+MOISES REQUIÃO DO NASCIMENTO09:25
+u
+JOÃO VICTOR SANTANA DOS SANTOS BRITO09:25
+Eu
+Pedro Kislansky09:26
+https://github.com/totemarcal/curso-react-js/tree/S2D4-cronometro
+Joao Pedro09:26
+fiz usando o seu de base
+é
+so pra criar outro projeto já demora kkkkk
+da sim
+so t afeio
+Luan Souza09:42
+alô
+bom dia
+Joao Pedro09:45
+oiia, queria ter feito o meu assim, bonitinho
+Alcimar Pacheco09:53
+bom dia
+Felipe Pereira09:58
+qual o desafio de segunda mesmo?
+Pedro Kislansky10:07
+import logo from './logo.svg';
+import './App.css';
+import LabelCronometro from "./components/LabelCronometro";
+import Contador from "./components/Contador"
+
+function App() {
+  return (
+    <div className="App">
+      <LabelCronometro name="**Cronômetro**"/>
+      <Contador />
+    </div>
+  );
+}
+
+export default App;
+Caio Nunes10:08
+Faltou o export
+Felipe Pereira10:08
+export default App;
+Luan Souza10:13
+Professor
+Alcimar Pacheco10:18
+;.
+Lucas Nascimento10:20
+Professor, eu não vou poder mais continuar na aula no momento, o desafio pra segunda feira é oq tem q fazer em equipe?
+Caio Nunes10:20
+O de segunda é individual
+No caso, o temporizador
+Lucas Nascimento10:20
+Ah certo
+Felipe Pereira10:20
+ah certo
+Lucas Nascimento10:21
+Vlw galera vou precisar sair aq, bom dia pra vcs!
+Pedro Kislansky10:26
+mas alguém?
+*mais
+para apresentar ou tirar dúvidas?
+Edson Filho10:28
+estou vendo o meu aqui ainda 
+estou revisando tudo  
+ainda n acabei 
+Alcimar Pacheco10:31
+professor
+o meu ta dando erro ao adicionar o botão parcial
+MOISES REQUIÃO DO NASCIMENTO10:32
+Professor pra conseguir zerar o cronometro eu tenho que alterar em qual local
+Caio Nunes10:32
+Compartilhem a tela, um de cada vez
+E quem conseguir ajudar, passa as dicas
+MOISES REQUIÃO DO NASCIMENTO10:32
+o meu ta dando a mensagem 
+undefined:NaN
+certo
+Caio Nunes10:33
+coloca o numero 0 nos parentenses
+MOISES REQUIÃO DO NASCIMENTO10:33
+zerar?
+Caio Nunes10:35
+kkkkkkk
+JOÃO VICTOR SANTANA DOS SANTOS BRITO10:35
+Kkkkk
+Alcimar Pacheco10:41
+Posso apresentar o meu ?
+Veríssimo Santos10:48
+Bom dia pessoal. Ta mudo ?
+MOISES REQUIÃO DO NASCIMENTO10:48
+não
+sim
+Veríssimo Santos10:48
+Sim
+JOÃO VICTOR SANTANA DOS SANTOS BRITO10:48
+Sim
+Tiago Gomes10:48
+sim
+Joao Pedro10:50
+foi
+Tiago Gomes10:51
+tote qual é o nome do arquivo que está no git falando de input mesmo?
+ok
+Pedro Kislansky10:52
+https://github.com/totemarcal/curso-react-js/tree/S2D3-class-functional
+ <input
+          type="text"
+          onChange={this.handleNameInput}
+          value={this.state.name}
+          placeholder="Your Name"
+        />
+<input
+        type="text"
+        onChange={handleNameInput}
+        value={name}
+        placeholder="Your Name"
+      />
+const handleNameInput = e => {
+    setName(e.target.value);
+  };
+  const [name, setName] = useState('John Doe');
+Tiago Gomes10:53
+vlw
+MOISES REQUIÃO DO NASCIMENTO10:54
+essa parte coloco no Contador.js
+certo?
+Joao Pedro10:55
+professor, e muito errado usar os inputs pelo getElement do form, e entao ir pegandos os valores e tals, e nao pelo onChange?
+ou passando o form no submit e capturando os valores
+Felipe Pereira10:56
+acho que não
+Joao Pedro10:59
+eu tenho que me habituar a usar o onchange, acho que e mais produtivo
+lucas10:59
+Professor, o meu não tá mostrando o temporizador na tela, acho q esqueci de importar algo
+Alcimar Pacheco11:02
+internet caiu
+Felipe Pereira11:15
+blz
+Veríssimo Santos11:16
+eu
+Luísa Leite11:16
+Presente
+William Sodre11:17
+aqui
+Tiago Gomes11:17
+aqui
+Felipe Pereira11:17
+beleza
+JOÃO VICTOR SANTANA DOS SANTOS BRITO11:17
+Ok
+William Sodre11:17
+ok professor 
+MOISES REQUIÃO DO NASCIMENTO11:17
+certo
+Tiago Gomes11:17
+ok
+Caio Nunes11:17
+ok
+MOISES REQUIÃO DO NASCIMENTO11:17
+certo
+MOISES REQUIÃO DO NASCIMENTO11:20
+{
+return
+<Botao  onClick={() => {parciais()}}  label="Parcial"  />
+<LabelParcial  items={parcial}/>
+(props.parcial)
+}
+return
+
+export default Botao
+galera esse codigo ta correto
+MOISES REQUIÃO DO NASCIMENTO11:21
+inseri ele no botão pra criar o botão de parciais
+Felipe Pereira11:24
+ai é no arquivo Botao ?
+MOISES REQUIÃO DO NASCIMENTO11:24
+isso
+Felipe Pereira11:27
+import React from 'react'
+
+const Botao = (props) => (
+    <button onClick={props.onClick}>{props.label}</button>
+)
+
+export default Botao
+MOISES REQUIÃO DO NASCIMENTO11:27
+coloco no botao?
+Felipe Pereira11:28
+botao é somente isso, para colocar você tem que importar no arquivo contador
+e coloca no return 
+MOISES REQUIÃO DO NASCIMENTO11:28
+certo
+Felipe Pereira11:28
+<Botao onClick={() => {parciais()}} label="Parcial" />
+MOISES REQUIÃO DO NASCIMENTO11:32
+Valeu, Felipe

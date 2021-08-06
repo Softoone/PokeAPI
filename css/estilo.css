@@ -1,0 +1,31 @@
+#info_pkm{
+    border: 3px,black;
+    border-style: solid;
+    border-radius: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    padding: 10px;
+    text-align: center;
+}
+
+.pokes{
+    padding: 30px;
+    text-align: center;
+}
+
+div{
+    margin-top: 100px;
+}
+
+.img_poke{
+    width: 70%;
+}
+
+#pesquisar{
+    height: 35px;
+    text-align: center;
+    margin-left: 15px;
+}

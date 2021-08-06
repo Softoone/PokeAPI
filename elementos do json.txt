@@ -1,0 +1,5 @@
+.name
+.id
+.height
+.weight
+.sprites[front_default]
